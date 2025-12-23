@@ -8,7 +8,16 @@
         "forceConsistentCasingInFileNames": true,
         "outDir": "dist",
         "rootDir": "src",
-        "jsx": "react"
+        "jsx": "react",
+        "baseUrl": ".",
+        "paths": {
+            "@Src/*": [
+                "./src/*"
+            ],
+            "@Assets/*": [
+                "./public/assets/*"
+            ]
+        }
     },
     "include": [
         "src",

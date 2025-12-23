@@ -1,6 +1,6 @@
 import React from "react";
 import "./greetings.scss";
-import Img from "../../public/assets/home.png";
+import Img from "@Assets/home.png";
 
 const Greet: React.FC = () => {
   return (

@@ -44,7 +44,11 @@ module.exports = {
     }),
   ],
   resolve: {
-    extensions: [".tsx", ".ts", ".js"],
+    extensions: [".js", ".jsx", ".ts", ".tsx"],
+    alias: {
+      "@Assets": path.resolve(__dirname, "public/assets"),
+      "@Src": path.resolve(__dirname, "src"),
+    },
   },
   devServer: {
     static: {
