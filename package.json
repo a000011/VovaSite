@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "buildFrontend": "pnpm -F @VovaSite/web build",
-    "startFrontend": "pnpm -F @VovaSite/web start"
+    "startFrontend": "pnpm -F @VovaSite/web start",
+    "startServer": "pnpm -F @VovaSite/ssr start"
   },
   "keywords": [],
   "author": "",

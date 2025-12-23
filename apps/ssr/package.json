@@ -1,0 +1,22 @@
+{
+  "name": "@VovaSite/ssr",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "echo 1",
+    "start": "nodemon  --exec node --loader ts-node/esm src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.18.3",
+  "dependencies": {
+    "fastify": "^5.6.2",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
