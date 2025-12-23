@@ -1,8 +1,19 @@
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const path = require("path");
+import { CleanWebpackPlugin } from "clean-webpack-plugin";
+import HtmlWebpackPlugin from "html-webpack-plugin";
+import path, { dirname } from "path";
+import { fileURLToPath } from "url";
+// import { Configuration } from "webpack";
+import { Configuration as DevServerConfiguration } from "webpack-dev-server";
+import { WebpackConfiguration } from "webpack-dev-server";
 
-module.exports = {
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+interface Configuration extends WebpackConfiguration {
+  devServer?: DevServerConfiguration;
+}
+
+const config: Configuration = {
   mode: "production",
   entry: path.resolve(__dirname, "src", "index.tsx"),
   output: {
@@ -59,3 +70,5 @@ module.exports = {
     hot: true,
   },
 };
+
+export default config;
